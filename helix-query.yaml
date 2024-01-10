@@ -37,7 +37,7 @@ indices:
         value: attribute(el, "content")
       publisheddate:
         select: head > meta[name="publisheddate"]
-        value: parseTimestamp(attribute(el, "content"), "MMMM DD, YYYY, hh:mm a z")
+        value: parseTimestamp(attribute(el, "content"), "MMMM DD, YYYY, hh:mm GMT")
       keywords:
         select: head > meta[name="keywords"]
         value: attribute(el, "content")
